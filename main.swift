@@ -10,7 +10,7 @@ print ("it didnt compile because let cannot be changed")
 
 // Note: These exercises reinforce Swift concepts in the context of a fitness tracking app.
 // Your fitness tracking app needs to know goal number of steps per day. Create a constant goalSteps and set it to 10000.
-let goalSteps = 10000 
+let goalSteps = 10_000 
 
 // Use two print functions to print two separate lines to the console. The first line should say "Your step goal for the day is:", and the second line should print the value of goalSteps by referencing your constant.
 
@@ -38,7 +38,7 @@ print(steps)
 
 // Now assume the tracker has been keeping track of steps all morning, and you want to show the user the latest step count. Update steps to be 2000. Print steps to the console. Then print "Good job! You're well on your way to your daily goal."
 
-steps = 2000
+steps = 2_000
 print(steps)
 print ("Good job! You're well on your way to your daily goal.")
 
@@ -95,36 +95,41 @@ var firstDecimal = 2.2
 var secondDecimal = 3.2
 
 // Declare a variable called trueOrFalse and give it a boolean value. Try to assign it to firstDecimal like so: firstDecimal = trueOrFalse. Does it compile? Print a statement to the console explaining why not, and remove the line of code that will not compile.
-
-
-
+var trueOrFalse = true
+print ("no it doesnt compile beacuse it cannot assign type boolean to a type double")
 // Declare a variable and give it a string value. Then try to assign it to firstDecimal. Does it compile? Print a statement to the console explaining why not, and remove the line of code that will not compile.
-
-
+var myMessage = "This is a message And the reason it doesnt compile is because the type double cant be assigned to a string"
+print (myMessage)
 // Finally, declare a variable with a whole number value. Then try to assign it to firstDecimal. Why won't this compile even though both variables are numbers? Print a statement to the console explaining why not, and remove the line of code that will not compile.
+var hotNumber = 69 
 
+print ("it doesnt compile because one number is a double and the other is an int")
 
 // You have declared a number of constants and variables to keep track of fitness information. Declare one more variable with a boolean value called hasMetStepGoal.
-
+var hasMetStepGoal = true
 
 // When you declared a constant for goal number of steps and a variable for current step count, you likely assigned each a value in the thousands. This can be difficult to read. Redeclare this constant and variable and, when assigning each a value in the thousands, format the number so that it is more readable.
 
 
 // Declare a variable called name of type String, but do not give it a value. Print name to the console. Does the code compile? Remove any code that will not compile.
 
+var name = ""
+print (name)
 
 // Now assign a value to name, and print it to the console.
-
+name = "bartholomew"
+print (name)
 
 // Declare a variable called distanceTraveled and set it to 0. Do not give it an explicit type.
-
+var distanceTraveled: Double = 0
 
 // Now assign a value of 54.3 to distanceTraveled. Does the code compile? Go back and set an explicit type on distanceTraveled so the code will compile.
+distanceTraveled = 54.3
 
 
 // You decide that your fitness tracking app should show the user what percentage of his/her goal has been achieved so far today. Declare a variable called percentCompleted and set it to 0. Do not explicity assign it a type.
-
+var percentCompleted: Double = 0
 
 // Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. This means he/she is 34.67% of the way to his/her goal. Assign 34.67 to percentCompleted. Does the code compile? Go back and explicity assign a type to percentCompleted that will allow the code to compile.
-
+percentCompleted = 34.67
 
